@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "exampleFlowable"
+version = "0.0.1"
+description = "ReportLab Flowable for use with RML Template"
+authors = ["Raymond GA Côté <ray@AppropriateSolutions.com>"]
+license = "BSD-3"
+readme = "README.md"
+keywords = ["ReportLab", "RML"]
+homepage = "https://github.com/rgacote/reportlab-flowable-for-rml"
+repository = "https://github.com/rgacote/reportlab-flowable-for-rml"
+include = []
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: Other/Proprietary License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Reports",
+]
+
+[tool.poetry.dependencies]
+matplotlib = "^3.7.1"
+python = "^3.11"
+rlextra = {version = "^4.0", source = "reportlab"}
+
+# Access to the commercial product.
+[[tool.poetry.source]]
+name = "reportlab"
+url = "https://www.reportlab.com/pypi/"
+default = false
+secondary = true
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
