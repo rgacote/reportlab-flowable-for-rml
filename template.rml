@@ -1,0 +1,29 @@
+<!DOCTYPE document SYSTEM "../rml.dtd">
+<document filename="Flow Example" invariant="1" compression="1" >
+	<docinit>
+		<registerTTFont faceName="Vera" fileName="Vera.ttf"/>
+	</docinit>
+
+	<template
+	    pageSize="a4"
+	    leftMargin="72" rightMargin="72" topMargin="0" bottomMargin="180"
+	    >
+
+	    <pageTemplate id="main">
+	        <frame id="main"  x1="0.25in" y1="0.5in" width="7.8in" height="10.5in" />
+	    </pageTemplate>
+    </template>
+
+    <stylesheet>
+        <initialize>
+            <alias id="style.normal" value="style.Normal"/>
+        </initialize>
+    </stylesheet>
+
+    <story>
+        <para>Hello World</para>
+        <plugInFlowable module="pluginflow" function="chart">Nice Chart!</plugInFlowable>
+    </story>
+</document>
+
+
